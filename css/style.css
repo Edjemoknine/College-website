@@ -1,0 +1,504 @@
+:root {
+    --bg-color: #f2F2F2;
+    --btn-linaer: linear-gradient(to right, rgb(0, 162, 255), rgb(0, 255, 183), rgb(0, 255, 132), rgb(0, 255, 60));
+    --btn-linaer2: linear-gradient(to right, rgb(0, 55, 255), rgb(85, 0, 255), rgb(136, 0, 255), rgb(255, 0, 204));
+    --btn-linaer3: linear-gradient(to right, rgb(242, 255, 0), rgb(255, 234, 0), rgb(255, 157, 0), rgb(255, 51, 0));
+    --txt-clr: #101010;
+    --prg-clr: #929090;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* ****************************************************** */
+
+.special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+.special-heading+p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+@media(max-width:767px) {
+    .special-heading {
+        font-size: 50px;
+    }
+    .special-heading+p {
+        margin-top: -20px;
+    }
+}
+
+
+/* ******************************************************** */
+
+header {
+    background-color: var(--bg-color);
+    height: 90px;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2em;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--txt-clr);
+    cursor: pointer;
+}
+
+.contact {
+    color: white;
+    padding: 0.6rem 0.8rem;
+    background-image: var(--btn-linaer);
+    background-size: 300% 100%;
+    border-radius: 5px;
+    transition: all .3S ease-in-out;
+    border: none;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(49, 175, 189, 0.774);
+}
+
+.contact:hover {
+    background-position: 100% 0;
+}
+
+
+/* ******************* */
+
+.home {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/travel/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.welcome h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    line-height: 1.6;
+}
+
+.join {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.join button {
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.join .Our {
+    background-image: var(--btn-linaer);
+    background-size: 300% 100%;
+    transition: all .3S ease-in-out;
+    border: none;
+    box-shadow: 0 4px 15px rgba(49, 175, 189, 0.774);
+}
+
+.join .Our:hover {
+    background-position: 100% 0;
+}
+
+
+/* ********************************************* */
+
+.education {
+    margin-top: 15%;
+}
+
+.edu-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card {
+    width: 300Px;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card i {
+    font-size: 3.5rem;
+    margin-bottom: 20Px;
+    padding: 20px;
+    color: white;
+    border-radius: 5Px;
+}
+
+.card h3 {
+    font-size: 25Px;
+    margin-bottom: 20Px;
+    font-weight: 700;
+    color: var(--txt-clr);
+}
+
+.card p {
+    color: var(--prg-clr);
+}
+
+.more {
+    margin-top: 30Px;
+    text-align: right;
+}
+
+.more a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #4b4949;
+}
+
+.more a:hover {
+    color: #101010;
+    border-bottom: 1px solid #101010;
+}
+
+.library i {
+    background-image: var(--btn-linaer);
+    color: white;
+}
+
+.academic i {
+    background-image: var(--btn-linaer2);
+}
+
+.graduate i {
+    background-image: var(--btn-linaer3);
+}
+
+
+/* **************************** */
+
+.subjects {
+    margin-top: 15%;
+}
+
+.our-subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100Px;
+    gap: 50Px;
+}
+
+.subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50Px;
+    text-align: center;
+}
+
+.sub {
+    padding: 20Px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 200Px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin: 0 1.5rem;
+    background-color: #e7e7e7;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.sub i {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translatex( -50%);
+    font-size: 3rem;
+    background-image: var(--btn-linaer);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.sub p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+/* ********************************* */
+
+.students-section {
+    margin-top: 20%;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.students {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.students>div {
+    flex: 1;
+}
+
+.students .image img {
+    border-top-right-radius: 50Px;
+    border-bottom-left-radius: 50px;
+}
+
+.students h2 {
+    text-align: start;
+    font-size: 2rem;
+}
+
+.students p {
+    margin-top: 1rem;
+}
+
+
+/* *********************************** */
+
+.grad-section {
+    margin-top: 20%;
+}
+
+.grad {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 50Px;
+    text-align: center;
+    margin-top: 100Px;
+}
+
+.line {
+    width: 3px;
+    height: 200px;
+    background: var(--btn-linaer3);
+}
+
+.graduates_ {
+    text-align: center;
+}
+
+.graduates_ i {
+    font-size: 4.5rem;
+    background-image: var(--btn-linaer);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+}
+
+.grad p {
+    font-size: 2rem;
+    color: var(--prg-clr);
+}
+
+.studentes_ i {
+    font-size: 4.5rem;
+    background-image: var(--btn-linaer2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+}
+
+
+/* ************************************** */
+
+.blog {
+    margin-top: 20%;
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300Px, 1fr));
+    gap: 30Px;
+    margin-top: 60Px;
+    padding: 5%;
+}
+
+.blog-content .box {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.info {
+    padding: 20Px;
+}
+
+.info h2 {
+    margin-bottom: 10px;
+}
+
+.info .learn-more {
+    text-align: right;
+    margin-top: 20Px;
+}
+
+.info .learn-more a {
+    background-image: var(--btn-linaer2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ************************************* */
+
+footer {
+    margin-top: 10%;
+    background-color: #929090;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50Px 0;
+}
+
+footer .col {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10Px;
+    text-align: left;
+}
+
+footer .col a {
+    text-decoration: none;
+    color: var(--bg-color);
+    padding-bottom: 10Px;
+    transition: all .3s linear;
+}
+
+footer .col a:hover {
+    transform: translateX(5px);
+    color: #096772;
+}
+
+.social i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+}
+
+.social i:hover {
+    background-image: var(--btn-linaer2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    header nav ul {
+        display: none;
+    }
+    header .logo {
+        width: 150Px;
+    }
+    .contact {
+        padding: 0.4rem 0.5rem;
+        font-size: 15px;
+    }
+    .join {
+        flex-direction: column;
+    }
+    .edu-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .subject {
+        flex-wrap: wrap;
+    }
+    .grad {
+        flex-direction: column;
+    }
+    .line {
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+    .students {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .social {
+        text-align: center;
+    }
+}
